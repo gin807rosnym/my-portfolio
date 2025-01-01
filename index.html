@@ -1,58 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>作品集</title>
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    header {
-      background-color: #f4f4f4;
-      padding: 20px;
-      text-align: center;
-    }
-    section {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    .video-container, .photo-container {
-      display: grid;
-      gap: 20px;
-    }
-    .photo-container img {
-      width: 100%;
-      border-radius: 8px;
-    }
-    @media (max-width: 768px) {
-      section {
-        padding: 10px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的作品集</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>我的作品集</h1>
-    <p>欢迎来到我的网页！</p>
-  </header>
-  <section>
-    <h2>作品展示</h2>
-    <div class="video-container">
-      <iframe width="100%" height="315" src="https://www.youtube.com/embed/example" frameborder="0" allowfullscreen></iframe>
+    <div class="container">
+        <h1>欢迎来到我的作品集</h1>
+        <img src="https://github.com/gin807rosnym/my-portfolio/raw/main/OQQC2384.JPG" alt="我的作品" class="img-zoom">
+        <p>这是我的个人作品展示。</p>
+        <video width="100%" controls>
+            <source src="https://github.com/你的用户名/仓库名/raw/main/my-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
-    <div class="photo-container">
-      <img src="https://github.com/gin807rosnym/my-portfolio/raw/main/OQQC2384.JPG" alt="作品图片1">
-      <img src="example-photo2.jpg" alt="作品图片2">
-    </div>
-  </section>
-  <footer style="text-align: center; padding: 20px; background-color: #f4f4f4;">
-    <p>联系我：123456@gmail.com</p>
-  </footer>
 </body>
 </html>
