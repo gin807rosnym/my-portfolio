@@ -1,0 +1,79 @@
+/* 基本页面样式 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* 动画效果：淡入 */
+.container {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+/* 动画的关键帧 */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 图片缩放效果 */
+.img-zoom {
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.img-zoom:hover {
+    transform: scale(1.1);
+}
+
+/* 文字淡入效果 */
+h1 {
+    opacity: 0;
+    animation: fadeInText 1.5s ease-out 1s forwards;
+}
+
+/* 图片和文字的间隔 */
+.container img {
+    margin-top: 20px;
+}
+
+/* 动画的关键帧：文字淡入 */
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* 视频淡入效果 */
+video {
+    opacity: 0;
+    animation: fadeInVideo 1.5s ease-out 2s forwards;
+}
+
+/* 动画的关键帧：视频淡入 */
+@keyframes fadeInVideo {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
